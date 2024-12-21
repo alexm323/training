@@ -23,14 +23,7 @@ export const Accordion = () => {
   ];
 
   return (
-    <div
-      style={{
-        display: "flex",
-        width: "400px",
-        flexDirection: "column",
-        gap: "2px",
-      }}
-    >
+    <div>
       {content.map((item) => (
         <Section
           title={item.title}
