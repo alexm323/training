@@ -11,32 +11,26 @@ export const ProgressBar: React.FC<ProgressBarProps> = ({ progress }) => {
     progress = 0;
   }
   return (
-    <div className="component-container" style={{ flexDirection: "column" }}>
-      <p>Progress Bar</p>
+    <div className="progress" style={{ display: "flex", position: "relative" }}>
       <div
+        style={{
+          width: `${progress}%`,
+          backgroundColor: "rebeccapurple",
+          height: "100%",
+          position: "absolute",
+          flexDirection: "column",
+          display: "flex",
+          justifyContent: "center",
+          border: "none",
+        }}
         className="progress"
-        style={{ display: "flex", position: "relative" }}
       >
-        <div
+        <p
           style={{
-            width: `${progress}%`,
-            backgroundColor: "rebeccapurple",
-            height: "100%",
-            position: "absolute",
-            flexDirection: "column",
-            display: "flex",
-            justifyContent: "center",
-            border: "none",
+            color: "white",
+            display: "inline",
           }}
-          className="progress"
-        >
-          <p
-            style={{
-              color: "white",
-              display: "inline",
-            }}
-          >{`${progress}%`}</p>
-        </div>
+        >{`${progress}%`}</p>
       </div>
     </div>
   );

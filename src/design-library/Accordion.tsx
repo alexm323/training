@@ -42,7 +42,12 @@ export const Accordion = () => {
   );
 };
 
-const Section = ({ title, description }) => {
+interface SectionProps {
+  title: string;
+  description: string;
+}
+
+const Section: React.FC<SectionProps> = ({ title, description }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
