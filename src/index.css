@@ -84,3 +84,15 @@ body {
 .accordion-icon--rotated {
   transform: translateY(2px) rotate(-135deg);
 }
+
+.progress {
+  background-color: rgb(233, 236, 239);
+  border: 1px solid #c5c5c5;
+  border-radius: 8px;
+  height: 20px;
+}
+
+.component-container {
+  width: 600px;
+  display: flex;
+}
